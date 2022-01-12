@@ -135,7 +135,6 @@ ensures fact(n) <= exp(n,n)
         // Pero para utilizar la expresion anterior lo tengo que multiplicar el lado derecho por n
         assert n*fact(n-1) <= n*exp(n-1,n-1);
 
-        // TODO: No entiendo este paso             
         aux_Lemma(n-1,n,n-1);
         assert exp(n-1,n-1)  <= exp(n, n-1);
 
